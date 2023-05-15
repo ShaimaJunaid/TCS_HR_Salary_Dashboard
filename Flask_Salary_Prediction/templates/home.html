@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HR Salary Prediction</title>
+    <link rel ="stylesheet" href="/static/css/style.css">
+</head>
+<body background ="/static/images/background.jpg">
+    <div class ="input form">
+        <form action ="{{url_for('predict')}}" method ="POST" id ="input head"> 
+            <h2 id ="heading">HR Salary Prediction Form</h2>
+            <h3 id ="input">Enter the details given below</h3>
+
+            <table>
+                <tr>
+                    <div class="align-data">
+                        <td class="que">Age </td>
+                        <td><input class="inputfield" name="age" type="number" placeholder="17"></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="align-data">
+                        <td class="que">Workclass </td>
+                        <td><select name="workclass" class="inputfield" required="required">
+                            <option value="7">State-gov</option>
+                            <option value="6">Self-emp-not-inc</option>
+                            <option value="4">Private</option>
+                            <option value="1">Federal-gov</option>
+                            <option value="2">Local-gov</option>
+                            <option value="5">Self-emp-inc</option>
+                            <option value="3">Without-pay</option>
+                        </select></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="align-data">
+                        <td class="que">Occupation </td>
+                        <td><select name="occupation" class="inputfield" required="required">
+                        <option value="1">Adm-clerical</option>
+                        <option value="4">Exec-managerial</option>
+                        <option value="6">Handlers-cleaners</option>
+                        <option value="10">Prof-specialty</option>
+                        <option value="8">Other-service</option>
+                        <option value="12">Sales</option>
+                        <option value="3">Craft-repair</option>
+                        <option value="14">Transport-moving</option>
+                        <option value="5">Farming-fishing</option>
+                        <option value="7">Machine-op-inspct</option>
+                        <option value="13">Tech-support</option>
+                        <option value="11">Protective-serv</option>
+                        <option value="9">Armed-Forces</option>
+                        <option value="2">Priv-house-serv</option>
+                        </select></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="align-data">
+                        <td class="que">Sex </td>
+                        <td><select name="sex" class="inputfield" required="required">
+                            <option value="1">Male</option>
+                            <option value="0">Female</option>
+                        </select></td>
+                    </div>
+                </tr>
+                        <tr>
+                            <br>
+                            <td></td>
+                            <td><br><button id="submit" class="submit-btn" type="submit "><b>Submit</b></button>
+                            <br></td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </form>
+    </div>
+    
+
+    
